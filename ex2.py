@@ -79,3 +79,32 @@ if yes_or_no == "Yes":
         print(f"Element was: {i}")
 else:
     print ("Fine. There will be no more exercises!")
+
+print("""This is the third exercise practice which is a while loop practice
+Do you want to continue? Yes or No""")
+
+yes_or_no = input ("> ")
+
+if yes_or_no == "Yes":
+
+    i = 0
+    numbers = []
+
+    while i < 6:
+        print(f"At the top i is {i}")
+        numbers.append(i)
+
+        i = i + 1
+
+        print("Numbers now: ", numbers)
+        print(f"At the bottom i is {i}")
+
+        print("The numbers: ")
+
+    for num in numbers:
+        print(num)
+else: 
+    print("You've finished your third exercise!")
+
+
+
