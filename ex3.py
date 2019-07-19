@@ -29,6 +29,7 @@ def bear_room():
 
         if choice == "take honey":
             dead("The bear looks at you then slaps your face off.")
+            # exit program by calling dead function which calls exit(0)
         elif choice == "taunt bear" and not bear_moved:
             print("The bear has moved from the door.")
             print("You can go through it now.")
