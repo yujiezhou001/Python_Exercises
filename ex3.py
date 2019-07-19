@@ -1,3 +1,4 @@
+# import exit() from system to exit program.
 from sys import exit
 
 def gold_room():
@@ -22,7 +23,7 @@ def bear_room():
     print("The fat bear is in front of another door.")
     print("How are you going to move the bear?")
     bear_moved = False
-    
+    # using while loop (the bear room game is always gonna run)
     while True:
         choice = input("> ")
 
