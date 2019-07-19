@@ -52,13 +52,14 @@ def cthulhu_room():
         start()
     elif "head" in choice:
         dead("Well that was tasty!")
+        #calling dead function that calls exit(0) to exit the program
     else:
         cthulhu_room()
 
 
 def dead(why):
     print(why, "Good job!")
-    exit(0)
+    exit(0) #exit program
 
 def start():
     print("You are in a dark room.")
@@ -73,6 +74,6 @@ def start():
         cthulhu_room()
     else:
         dead("You stumble around the room until you starve.")
-
+        #calling dead function that calls exit(0) to exit the program
 
 start()
