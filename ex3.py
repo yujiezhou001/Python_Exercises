@@ -6,14 +6,18 @@ def gold_room():
 
     choice = input("> ")
     if "0" in choice or "1" in choice:
+        # convert a string to a number
         how_much = int(choice)
     else:
+        # exit program by calling dead function which calls exit(0)
         dead("Man, learn to type a number.")
 
     if how_much < 50:
         print("Nice, you're not greedy, you win!")
+        # exit program by calling exit(0) function directly
         exit(0)
     else:
+        # exit program by calling dead function which calls exit(0)
         dead("You greedy bastard!")
 
 
@@ -28,13 +32,14 @@ def bear_room():
         choice = input("> ")
 
         if choice == "take honey":
-            dead("The bear looks at you then slaps your face off.")
             # exit program by calling dead function which calls exit(0)
+            dead("The bear looks at you then slaps your face off.")
         elif choice == "taunt bear" and not bear_moved:
             print("The bear has moved from the door.")
             print("You can go through it now.")
             bear_moved = True
         elif choice == "taunt bear" and bear_moved:
+            # exit program by calling dead function which calls exit(0)
             dead("The bear gets pissed off and chews your leg off.")
         elif choice == "open door" and bear_moved:
             gold_room()
@@ -52,15 +57,16 @@ def cthulhu_room():
     if "flee" in choice:
         start()
     elif "head" in choice:
+        # calling dead function that calls exit(0) to exit the program
         dead("Well that was tasty!")
-        #calling dead function that calls exit(0) to exit the program
     else:
         cthulhu_room()
 
 
 def dead(why):
     print(why, "Good job!")
-    exit(0) #exit program
+    # xit program
+    exit(0)
 
 def start():
     print("You are in a dark room.")
@@ -74,7 +80,8 @@ def start():
     elif choice == "right":
         cthulhu_room()
     else:
+        # calling dead function that calls exit(0) to exit the program
         dead("You stumble around the room until you starve.")
-        #calling dead function that calls exit(0) to exit the program
+        
 
 start()
