@@ -54,10 +54,17 @@ print('-' * 10)
 # safely get a abbreviation by state that might not be there
 state = states.get('Texas')
 
+print('-' * 5 + 'MY OWN TESTING' + '-' * 5)
+# MY OWN TESTING
+mystate = states.get('Oregon')
 
 
 if not state:
     print("Sorry, no Texas.")
+    print("Here's what's like printing out in the console:", state)
+
+if mystate:
+    print(f"Here's your state: {mystate}")
 
 # get a city with a default value
 city = cities.get('TX', 'Does Not Exist')
