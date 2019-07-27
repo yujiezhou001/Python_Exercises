@@ -63,6 +63,7 @@ def convert(snippet, phrase):
 
     return results
 
+# testing if the time zone has been fixed.
 # keep going until they hit CTRL-D
 try:
     while True:
