@@ -77,6 +77,7 @@ try:
                 question, answer = answer, question
 
             print(question)
+            # testing time zone
             time_now = datetime.datetime.now()
             print(time_now)
             input("> ")
