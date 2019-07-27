@@ -1,6 +1,8 @@
 import random
 from urllib.request import urlopen
 import sys
+import datetime
+
 
 WORD_URL = "http://learncodethehardway.org/words.txt"
 WORDS = []
@@ -75,7 +77,8 @@ try:
                 question, answer = answer, question
 
             print(question)
-
+            time_now = datetime.datetime.now()
+            print(time_now)
             input("> ")
             print(f"ANSWER:  {answer}\n\n")
 except EOFError:
