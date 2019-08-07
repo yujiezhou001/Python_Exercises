@@ -7,6 +7,20 @@
 #   The Bridge
 #   Escape Pod
 
+
+
+# Map
+#     next_scene
+#     opening_scene
+# Engine 
+#     play
+# Scene
+#     enter
+#     Death
+#     Central Corridor
+#     Laser Weapon Armory * The Bridge
+#     Escape Pod
+
 class Scene(object):
 
     def enter(self):
